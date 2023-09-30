@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head></head>
+
+<body>
+	<h1>Hello World</h1>
+	<form action="addProgrammer" method="POST">
+		<label>Programmer's Name</label>
+		<input type="text" name="pName">
+		<label>Programmer's Language</label>
+		<input type="text" name="pLang">
+		<input type="submit">
+	</form>
+
+	<hr />
+
+	<form action="findById" method="POST">
+		<label>Enter Programmer's Id</label>
+		<input type="text" name="pId">
+		<input type="submit" value="Find By Id">
+	</form>
+	
+	<hr />
+	
+	<form action="findByLang" method="POST">
+		<label>Enter Programmer's Language</label>
+		<input type="text" name="pLang">
+		<input type="submit" value="Find By Language">
+	</form>
+	
+	<hr />
+	
+	<form action="findByName" method="POST">
+		<label>Enter Programmer's Name</label>
+		<input type="text" name="pName">
+		<input type="submit" value="Find By Name">
+	</form>
+	
+	<hr />
+
+	<form action="deleteProgrammer" method="GET">
+		<label>Enter Programmer's Id</label>
+		<input type="text" name="pId">
+		<input type="submit" value="Delete">
+	</form>
+	
+	<hr />
+	
+	<form action="updateProgrammer" method="POST">
+		<label>Programmer's Id</label>
+		<input type="text" name="pId">
+		<label>Programmer's Name</label>
+		<input type="text" name="pName">
+		<label>Programmer's Language</label>
+		<input type="text" name="pLang">
+		<input type="submit" value="Update">
+	</form>
+</body>
+
+</html>
